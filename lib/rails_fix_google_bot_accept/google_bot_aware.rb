@@ -1,8 +1,3 @@
-require "rails_fix_google_bot_accept/version"
-
-require 'rails_fix_google_bot_accept/google_bot_aware'
-require "rails_fix_google_bot_accept/railtie" if defined? Rails
-
 module RailsFixGoogleBotAccept
   # This Rack middleware helps solving the issue with some Rails versions which do not accept
   # a '*/*;q=0.6' and their variants 'Accept' request header. This header is particularly used
